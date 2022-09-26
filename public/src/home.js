@@ -1,8 +1,13 @@
+
+//Creating Helper function to get array length which is count of no of elements in an array.
+function getLengthOfArray(arr){
+  return arr.length;
+}
+
 function getTotalBooksCount(books) {
-const count = books.reduce((total, book) => total+ 1, 0);
+  //calling the helper function getLengthOfArray(arr)
+  const count = getLengthOfArray(books);
   return count;
-  
-  //return books.length;
 }
 
 //====================================================================================
